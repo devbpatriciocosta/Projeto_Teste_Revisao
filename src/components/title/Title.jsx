@@ -1,5 +1,9 @@
-import styles from './Title.module.scss'
+import styled from 'styled-components'
+
+const StyledTitle = styled.h1`
+  color: ${(props) => props.theme.primary};
+`
 
 export default function Title(props) {
-  return <h1 className={styles.title}>{props.children}</h1>
+  return <StyledTitle>{props.children}</StyledTitle>
 }
