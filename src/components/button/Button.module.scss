@@ -1,0 +1,21 @@
+$primary-color: rgb(255, 0, 221);
+
+.button {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  align-items: center;
+
+  label {
+    display: flex;
+    font-weight: bold;
+  }
+
+  button {
+    background-color: $primary-color;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}
